@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns:t3="http://typo3.org/schemas/xliff" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="pl" original="" datatype="plaintext" date="2026-01-19T08:40:00Z">
+		<body>
+			<trans-unit id="form.nosubmissionpossible.header" resname="form.nosubmissionpossible.header">
+				<source>No submissions possible</source>
+				<target>Przesłanie formularza nie jest możliwe</target>
+			</trans-unit>
+			<trans-unit id="form.nosubmissionpossible.text" resname="form.nosubmissionpossible.text">
+				<source>This form has a submission limit and that limit is reached. As there is no waiting list, no further submissions are possible.</source>
+				<target>Ten formularz posiada limit zgłoszeń, który został osiągnięty. Ponieważ nie ma listy oczekujących, dalsze zgłoszenia nie są możliwe.</target>
+			</trans-unit>
+			<trans-unit id="form.onlywaitlistwarning.header" resname="form.onlywaitlistwarning.header">
+				<source>Only wait list possible!</source>
+				<target>Możliwy tylko zapis na listę oczekujących!</target>
+			</trans-unit>
+			<trans-unit id="form.onlywaitlistwarning.text" resname="form.onlywaitlistwarning.text">
+				<source>This form has a submission limit and that limit is reached. However you can submit to a waiting list in case a slot becomes available again.</source>
+				<target>Ten formularz posiada limit zgłoszeń, który został osiągnięty. Możesz jednak zapisać się na listę oczekujących na wypadek, gdyby miejsce stało się ponownie dostępne.</target>
+			</trans-unit>
+			<trans-unit id="form.submissionlimit.legend" resname="form.submissionlimit.legend">
+				<source>Submission limit</source>
+				<target>Limit zgłoszeń</target>
+			</trans-unit>
+			<trans-unit id="form.submissionlimitwarning.header" resname="form.submissionlimitwarning.header">
+				<source>Submission limit in place</source>
+				<target>Obowiązuje limit zgłoszeń</target>
+			</trans-unit>
+			<trans-unit id="form.submissionlimitwarning.text" resname="form.submissionlimitwarning.text">
+				<source>This form has a submission limit. Please check the response after submission to ensure your submission was successful and a slot could be assigned.</source>
+				<target>Ten formularz posiada limit zgłoszeń. Prosimy o sprawdzenie odpowiedzi po przesłaniu, aby upewnić się, że zgłoszenie zakończyło się sukcesem i miejsce zostało przydzielone.</target>
+			</trans-unit>
+			<trans-unit id="form.submissionlimitwarning.text.addon.percentage" resname="form.submissionlimitwarning.text.addon.percentage">
+				<source>Current allocation: %s</source>
+				<target>Aktualne obłożenie: %s</target>
+			</trans-unit>
+			<trans-unit id="form.submissionlimitwarning.text.addon.waitlist" resname="form.submissionlimitwarning.text.addon.waitlist">
+				<source>If the limit is reached, you still can submit to the waitlist.</source>
+				<target>Jeśli limit zostanie osiągnięty, nadal możesz zapisać się na listę oczekujących.</target>
+			</trans-unit>
+			<trans-unit id="form.submissionspercentage.0" resname="form.submissionspercentage.0">
+				<source>enough free slots</source>
+				<target>wystarczająca liczba wolnych miejsc</target>
+			</trans-unit>
+			<trans-unit id="form.submissionspercentage.10" resname="form.submissionspercentage.10">
+				<source>enough free slots</source>
+				<target>wystarczająca liczba wolnych miejsc</target>
+			</trans-unit>
+			<trans-unit id="form.submissionspercentage.100" resname="form.submissionspercentage.100">
+				<source>no slot left</source>
+				<target>brak wolnych miejsc</target>
+			</trans-unit>
+			<trans-unit id="form.submissionspercentage.20" resname="form.submissionspercentage.20">
+				<source>enough free slots</source>
+				<target>wystarczająca liczba wolnych miejsc</target>
+			</trans-unit>
+			<trans-unit id="form.submissionspercentage.30" resname="form.submissionspercentage.30">
+				<source>enough free slots</source>
+				<target>wystarczająca liczba wolnych miejsc</target>
+			</trans-unit>
+			<trans-unit id="form.submissionspercentage.40" resname="form.submissionspercentage.40">
+				<source>enough free slots</source>
+				<target>wystarczająca liczba wolnych miejsc</target>
+			</trans-unit>
+			<trans-unit id="form.submissionspercentage.50" resname="form.submissionspercentage.50">
+				<source>enough free slots</source>
+				<target>wystarczająca liczba wolnych miejsc</target>
+			</trans-unit>
+			<trans-unit id="form.submissionspercentage.60" resname="form.submissionspercentage.60">
+				<source>still slots available</source>
+				<target>dostępne wolne miejsca</target>
+			</trans-unit>
+			<trans-unit id="form.submissionspercentage.70" resname="form.submissionspercentage.70">
+				<source>still slots available</source>
+				<target>dostępne wolne miejsca</target>
+			</trans-unit>
+			<trans-unit id="form.submissionspercentage.80" resname="form.submissionspercentage.80">
+				<source>still slots available</source>
+				<target>dostępne wolne miejsca</target>
+			</trans-unit>
+			<trans-unit id="form.submissionspercentage.90" resname="form.submissionspercentage.90">
+				<source>Warning! Only a few slots available</source>
+				<target>Uwaga! Zostało tylko kilka wolnych miejsc</target>
+			</trans-unit>
+			<trans-unit id="form.submissionstatus" resname="form.submissionstatus">
+				<source>Submission Status</source>
+				<target>Status zgłoszenia</target>
+			</trans-unit>
+			<trans-unit id="form.submissionstatus.invalid" resname="form.submissionstatus.invalid">
+				<source>No slot assigned</source>
+				<target>Miejsce nie zostało przydzielone</target>
+			</trans-unit>
+			<trans-unit id="form.submissionstatus.valid" resname="form.submissionstatus.valid">
+				<source>Slot assigned</source>
+				<target>Miejsce zostało przydzielone</target>
+			</trans-unit>
+			<trans-unit id="form.submissionstatus.waitinglist" resname="form.submissionstatus.waitinglist">
+				<source>No slot assigned, registered for waiting list</source>
+				<target>Miejsce nie zostało przydzielone, zarejestrowano na liście oczekujących</target>
+			</trans-unit>
+			<trans-unit id="mail.invalidsubmission.bodyprefix.header" resname="mail.invalidsubmission.bodyprefix.header">
+				<source>Attention: no slot available</source>
+				<target>Uwaga: brak wolnych miejsc</target>
+			</trans-unit>
+			<trans-unit id="mail.invalidsubmission.bodyprefix.text" resname="mail.invalidsubmission.bodyprefix.text">
+				<source>We received your registration, however the last slot was already taken and there is no waiting list. So your registration cannot be considered.</source>
+				<target>Otrzymaliśmy Twoje zgłoszenie, jednak ostatnie wolne miejsce zostało już zajęte, a lista oczekujących nie jest prowadzona. W związku z tym Twoje zgłoszenie nie może zostać uwzględnione.</target>
+			</trans-unit>
+			<trans-unit id="mail.invalidsubmission.subjectprefix" resname="mail.invalidsubmission.subjectprefix">
+				<source>No slot available - </source>
+				<target>Brak wolnych miejsc - </target>
+			</trans-unit>
+			<trans-unit id="mail.submissionlimitreached.body" resname="mail.submissionlimitreached.body">
+				<source>The form %s has a submission limit which has been reached. If there is a waiting list in place this will now be filled, else all further submissions are prevented.</source>
+				<target>Formularz %s osiągnął limit zgłoszeń. Jeśli lista oczekujących jest aktywna, będzie ona teraz zapełniana, w przeciwnym razie wszystkie dalsze zgłoszenia są zablokowane.</target>
+			</trans-unit>
+			<trans-unit id="mail.submissionlimitreached.subject" resname="mail.submissionlimitreached.subject">
+				<source>Submission limit reached for form %s</source>
+				<target>Osiągnięto limit zgłoszeń dla formularza %s</target>
+			</trans-unit>
+			<trans-unit id="mail.waitinglistsubmission.bodyprefix.header" resname="mail.waitinglistsubmission.bodyprefix.header">
+				<source>Attention: registration for waiting list only</source>
+				<target>Uwaga: rejestracja tylko na listę oczekujących</target>
+			</trans-unit>
+			<trans-unit id="mail.waitinglistsubmission.bodyprefix.text" resname="mail.waitinglistsubmission.bodyprefix.text">
+				<source>We received your registration, however the last slot was already taken. Nevertheless, we added you to the waiting list, in case a slot becomes available.</source>
+				<target>Otrzymaliśmy Twoje zgłoszenie, jednak ostatnie wolne miejsce zostało już zajęte. Mimo to dodaliśmy Cię do listy oczekujących na wypadek, gdyby miejsce stało się dostępne.</target>
+			</trans-unit>
+			<trans-unit id="mail.waitinglistsubmission.subjectprefix" resname="mail.waitinglistsubmission.subjectprefix">
+				<source>Waiting list registration - </source>
+				<target>Rejestracja na listę oczekujących - </target>
+			</trans-unit>
+			<trans-unit id="tca.haswaitlist" resname="tca.haswaitlist">
+				<source>has waiting list</source>
+				<target>posiada listę oczekujących</target>
+			</trans-unit>
+			<trans-unit id="tca.haswaitlist.description" resname="tca.haswaitlist.description">
+				<source>Make the form available after the limit to allow a waitlist</source>
+				<target>Udostępnij formularz po przekroczeniu limitu, aby umożliwić zapis na listę oczekujących</target>
+			</trans-unit>
+			<trans-unit id="tca.showsubmissionsfullpercentage" resname="tca.showsubmissionsfullpercentage">
+				<source>show allocation percentage</source>
+				<target>pokaż procent obłożenia</target>
+			</trans-unit>
+			<trans-unit id="tca.showsubmissionsfullpercentage.description" resname="tca.showsubmissionsfullpercentage.description">
+				<source>Show the current number of submission as a percentage</source>
+				<target>Pokaż aktualną liczbę zgłoszeń jako wartość procentową</target>
+			</trans-unit>
+			<trans-unit id="tca.submissionlimit" resname="tca.submissionlimit">
+				<source>has submission limit</source>
+				<target>posiada limit zgłoszeń</target>
+			</trans-unit>
+			<trans-unit id="tca.submissionlimit.description" resname="tca.submissionlimit.description">
+				<source>Activate a submission limit for the current form</source>
+				<target>Aktywuj limit zgłoszeń dla bieżącego formularza</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
