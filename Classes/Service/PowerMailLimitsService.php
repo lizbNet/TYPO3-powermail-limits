@@ -37,14 +37,19 @@ class PowerMailLimitsService
         if ($form->isNewSubmissionForWaitlistMailManipulation()) {
             $bodyPrefixHeader = $this->getTranslation('mail.waitinglistsubmission.bodyprefix.header');
             $bodyPrefixText = $this->getTranslation('mail.waitinglistsubmission.bodyprefix.text');
+            $bodyPrefix = sprintf('<p><strong>%s</strong></p><p>%s</p><hr>', $bodyPrefixHeader, $bodyPrefixText);
+            $standaloneView->assign('powermail_limits_waitlist_active', $bodyPrefix);
         } elseif (!$form->isNewSubmissionValid()) {
             $bodyPrefixHeader = $this->getTranslation('mail.invalidsubmission.bodyprefix.header');
             $bodyPrefixText = $this->getTranslation('mail.invalidsubmission.bodyprefix.text');
+            $bodyPrefix = sprintf('<p><strong>%s</strong></p><p>%s</p><hr>', $bodyPrefixHeader, $bodyPrefixText);
+            $standaloneView->assign('powermail_limits_limit_reached', $bodyPrefix);
         }
 
-        $bodyPrefix = sprintf('<p><strong>%s</strong></p><p>%s</p><hr>', $bodyPrefixHeader, $bodyPrefixText);
-        $email['rteBody'] = $bodyPrefix . $email['rteBody'];
-        $standaloneView->assign('powermail_rte', $email['rteBody']);
+        if (isset($bodyPrefix)) {
+            $email['rteBody'] = $bodyPrefix . $email['rteBody'];
+            $standaloneView->assign('powermail_rte', $email['rteBody']);
+        }
 
         return $standaloneView;
     }
