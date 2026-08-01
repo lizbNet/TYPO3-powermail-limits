@@ -61,6 +61,7 @@ class MailManipulation
             $bodyPrefix = sprintf('<p><strong>%s</strong></p><p>%s</p><hr>', $bodyPrefixHeader, $bodyPrefixText);
             $email['rteBody'] = $bodyPrefix . $email['rteBody'];
             $standaloneView->assign('powermail_rte', $email['rteBody']);
+            $standaloneView->assign('powermail_limits_waitlist_active', $bodyPrefix);
         } elseif (!$form->isNewSubmissionValid()) {
             $bodyPrefixHeader = LocalizationUtility::translate(
                 'mail.invalidsubmission.bodyprefix.header',
@@ -73,6 +74,7 @@ class MailManipulation
             $bodyPrefix = sprintf('<p><strong>%s</strong></p><p>%s</p><hr>', $bodyPrefixHeader, $bodyPrefixText);
             $email['rteBody'] = $bodyPrefix . $email['rteBody'];
             $standaloneView->assign('powermail_rte', $email['rteBody']);
+            $standaloneView->assign('powermail_limits_limit_reached', $bodyPrefix);
         }
     }
 }
