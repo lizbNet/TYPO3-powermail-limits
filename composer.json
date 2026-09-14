@@ -1,5 +1,6 @@
 {
   "name": "jpmschuler/powermail-limits",
+  "version": "dev-main",
   "description": "TYPO3 EXT:powermail_limits - Addition to EXT:powermail which allows limits for form submissions",
   "license": "GPL-2.0-or-later",
   "type": "typo3-cms-extension",
@@ -12,10 +13,10 @@
   ],
   "require": {
     "php": "^8.0",
-    "in2code/powermail": "^12.4.0",
-    "typo3/cms-core": "^12.4",
-    "typo3/cms-fluid": "^12.4",
-    "typo3/cms-frontend": "^12.4"
+    "in2code/powermail": "^12.4.0 || ^13.0 || ^14.0",
+    "typo3/cms-core": "^12.4 || ^13.4 || ^14.3",
+    "typo3/cms-fluid": "^12.4 || ^13.4 || ^14.3",
+    "typo3/cms-frontend": "^12.4 || ^13.4 || ^14.3"
   },
   "require-dev": {
     "ergebnis/composer-normalize": "^2.19.0",

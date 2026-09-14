@@ -18,7 +18,7 @@ final class AddBodyPrefixHeaderAndTextToView
     public function __invoke(SendMailServiceCreateEmailBodyEvent $event): void
     {
         $originalService = $event->getSendMailService();
-        $standaloneView = $event->getStandaloneView();
+        $view = $event->getView();
         $email = $event->getEmail();
 
         $form = $originalService->getMail()->getForm();
@@ -27,7 +27,7 @@ final class AddBodyPrefixHeaderAndTextToView
             return;
         }
 
-        $standaloneView = $this->powerMailLimitsService->getNewViewWithBodyPrefix($form, $standaloneView, $email);
-        $event->setStandaloneView($standaloneView);
+        $view = $this->powerMailLimitsService->getNewViewWithBodyPrefix($form, $view, $email);
+        $event->setView($view);
     }
 }

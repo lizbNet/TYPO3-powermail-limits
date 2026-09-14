@@ -5,8 +5,8 @@ namespace Jpmschuler\PowermailLimits\SignalSlot;
 use In2code\Powermail\Domain\Service\Mail\SendMailService;
 use Jpmschuler\PowermailLimits\Domain\Model\FormWithSubmissionLimit;
 use TYPO3\CMS\Core\Mail\MailMessage;
+use TYPO3\CMS\Core\View\ViewInterface;
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
-use TYPO3\CMS\Fluid\View\StandaloneView;
 
 class MailManipulation
 {
@@ -41,7 +41,7 @@ class MailManipulation
      * @param array<string, mixed> $email
      */
     public function createEmailBodyBeforeRender(
-        StandaloneView $standaloneView,
+        ViewInterface $view,
         array $email,
         SendMailService $originalService
     ): void {
@@ -60,8 +60,8 @@ class MailManipulation
             );
             $bodyPrefix = sprintf('<p><strong>%s</strong></p><p>%s</p><hr>', $bodyPrefixHeader, $bodyPrefixText);
             $email['rteBody'] = $bodyPrefix . $email['rteBody'];
-            $standaloneView->assign('powermail_rte', $email['rteBody']);
-            $standaloneView->assign('powermail_limits_waitlist_active', $bodyPrefix);
+            $view->assign('powermail_rte', $email['rteBody']);
+            $view->assign('powermail_limits_waitlist_active', $bodyPrefix);
         } elseif (!$form->isNewSubmissionValid()) {
             $bodyPrefixHeader = LocalizationUtility::translate(
                 'mail.invalidsubmission.bodyprefix.header',
@@ -73,8 +73,8 @@ class MailManipulation
             );
             $bodyPrefix = sprintf('<p><strong>%s</strong></p><p>%s</p><hr>', $bodyPrefixHeader, $bodyPrefixText);
             $email['rteBody'] = $bodyPrefix . $email['rteBody'];
-            $standaloneView->assign('powermail_rte', $email['rteBody']);
-            $standaloneView->assign('powermail_limits_limit_reached', $bodyPrefix);
+            $view->assign('powermail_rte', $email['rteBody']);
+            $view->assign('powermail_limits_limit_reached', $bodyPrefix);
         }
     }
 }
