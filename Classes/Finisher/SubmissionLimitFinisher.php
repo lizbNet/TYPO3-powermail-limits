@@ -25,7 +25,7 @@ class SubmissionLimitFinisher extends AbstractFinisher
         // A hidden sign-up (waiting list, or saved hidden by another extension) doesn't change the
         // visible count, so it isn't the one that reached the limit.
         $receiver = trim($mail->getReceiverMail());
-        if ($mail->getHidden() || filter_var($receiver, FILTER_VALIDATE_EMAIL) === false) {
+        if ($mail->getHidden() || !GeneralUtility::validEmail($receiver)) {
             return;
         }
         if ($form->isLastSubmissionAllowed()) {
